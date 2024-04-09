@@ -1,16 +1,14 @@
 {
-  "name": "macos-key-cast",
-  "version": "1.4.0",
-  "description": "Log keys pressed on macOS. Useful for screen recordings and presentations.",
-  "repository": "https://github.com/karaggeorge/macos-key-cast",
+  "name": "message_visualizer",
+  "version": "0.0.1",
+  "description": "Send simple message to screen on macOS. Useful for simple notification.",
+  "repository": "https://github.com/curiosusJR/mac-msg-visualizer",
   "author": {
-    "name": "George Karagkiaouris",
-    "email": "gkaragkiaouris2@gmail.com",
-    "url": "https://gkaragkiaouris.tech"
+    "name": "Junru Zhang",
+    "email": "millipedeassassin@gmail.com"
   },
   "bin": {
-    "macos-key-cast": "./key-cast",
-    "key-cast": "./key-cast"
+    "message_visualizer": "./message_visualizer"
   },
   "license": "MIT",
   "files": [
@@ -20,18 +18,14 @@
   ],
   "scripts": {
     "test": "xo && tsd",
-    "build": "swift build --configuration=release && mv .build/release/key-cast .",
+    "build": "swift build --configuration=release && mv .build/release/message_visualizer .",
     "prepublishOnly": "npm run build"
   },
   "keywords": [
     "macos",
     "swift",
-    "log",
-    "cast",
-    "keys",
-    "keyboard",
-    "keylogger",
-    "record",
+    "notification",
+    "message",
     "screen"
   ],
   "engines": {

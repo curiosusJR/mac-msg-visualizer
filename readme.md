@@ -1,26 +1,23 @@
-# forked from macos-key-cast [![Actions Status](https://github.com/karaggeorge/macos-key-cast/workflows/Node%20CI/badge.svg)](https://github.com/karaggeorge/macos-key-cast/actions)
+# Message_visualizer [![Actions Status](https://github.com/karaggeorge/macos-key-cast/workflows/Node%20CI/badge.svg)](https://github.com/karaggeorge/macos-key-cast/actions)
 
-Usage: message_visualizer [text] [options]
+> forked from [macos-key-cast](https://github.com/karaggeorge/macos-key-cast)
 
 
 # Origin Readme
-> Log keys pressed on macOS. Useful for screen recordings and presentations.
+> Send simple message to screen on macOS. Useful for simple notification.
 
-Requires macOS 10.12 or later. macOS 10.13 or earlier needs to download the [Swift runtime support libraries](https://support.apple.com/kb/DL1998).
+Requires macOS 10.12 or later. 
 
 ## Run as CLI
 
 ### Installing
 
-```
-$ npm install -g macos-key-cast
-$ key-cast
-```
+Download the excutable file from release
 
 ### Usage
 
 ```
-Usage: key-cast [options]
+Usage: message_visualizer <text> [options]
 
 Options:
   -b, --bounds <value>      JSON object with bounds of a rectangle to show the UI in. Example: '{"bounds":[[955,627],[656,384]]}'
@@ -39,21 +36,11 @@ Options:
 $ npm install macos-key-cast
 ```
 
-### Usage
-
-```js
-const castKeys = require('macos-key-cast');
-
-const process = castKeys({size: 'large', delay: 1.5, keyCombinationsOnly: true});
-
-// Later
-
-process.cancel();
-```
-
 ### Demo
 
 <img src="media/demo.gif">
+
+With [yabai](https://github.com/koekeishiya/yabai) and [skhd](https://github.com/koekeishiya/skhd), show the space info during switching.
 
 ### Dark Mode support
 
