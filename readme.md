@@ -12,7 +12,10 @@ Requires macOS 10.12 or later.
 
 ### Installing
 
-Download the excutable file from release
+Download the excutable file from release or using npm:
+```
+npm install -g message_visualizer
+```
 
 ### Usage
 
