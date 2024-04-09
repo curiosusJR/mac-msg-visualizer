@@ -1,10 +1,8 @@
-# Message_visualizer [![Actions Status](https://github.com/karaggeorge/macos-key-cast/workflows/Node%20CI/badge.svg)](https://github.com/karaggeorge/macos-key-cast/actions)
+# Message_visualizer
 
-> forked from [macos-key-cast](https://github.com/karaggeorge/macos-key-cast)
-
-
-# Origin Readme
 > Send simple message to screen on macOS. Useful for simple notification.
+
+forked from [macos-key-cast](https://github.com/karaggeorge/macos-key-cast)
 
 Requires macOS 10.12 or later. 
 
@@ -32,12 +30,6 @@ Options:
 ```
 
 ## Node API
-
-### Installation
-
-```
-$ npm install macos-key-cast
-```
 
 ### Demo
 
