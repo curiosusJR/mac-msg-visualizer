@@ -140,7 +140,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             window.setFrame(NSMakeRect(x, y, windowFrameSize.width, windowFrameSize.height), display: true)
         } else {
             let x = (screenFrame.origin.x + (screenFrame.width ) - (windowFrameSize.width))*0.988
-            let y = (screenFrame.origin.y + (screenFrame.height ) - (windowFrameSize.height))*0.968
+            let y = (screenFrame.origin.y + (screenFrame.height ) - (windowFrameSize.height))*0.84
             //print(x,y)
             //print(screenFrame.origin.x, screenFrame.width, windowFrameSize.width)
             //print(screenFrame.origin.y, screenFrame.height, windowFrameSize.height)
