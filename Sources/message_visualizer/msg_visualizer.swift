@@ -53,7 +53,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
     let field: NSTextView = {
         let textView = NSTextView()
         textView.backgroundColor = .clear
-        textView.isSelectable = false
+        textView.isSelectable = false 
         textView.translatesAutoresizingMaskIntoConstraints = false
         return textView
     }()
@@ -100,7 +100,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         visualEffect.material = .appearanceBased
         visualEffect.state = .active
         visualEffect.wantsLayer = true
-        visualEffect.layer?.cornerRadius = 10.0
+        visualEffect.layer?.cornerRadius = 0.5
         
         guard let contentView = window.contentView else {
             fatalError()
@@ -140,7 +140,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
             window.setFrame(NSMakeRect(x, y, windowFrameSize.width, windowFrameSize.height), display: true)
         } else {
             let x = (screenFrame.origin.x + (screenFrame.width ) - (windowFrameSize.width))*0.988
-            let y = (screenFrame.origin.y + (screenFrame.height ) - (windowFrameSize.height))*0.84
+            let y = (screenFrame.origin.y + (screenFrame.height ) - (windowFrameSize.height))*0.92
             //print(x,y)
             //print(screenFrame.origin.x, screenFrame.width, windowFrameSize.width)
             //print(screenFrame.origin.y, screenFrame.height, windowFrameSize.height)
@@ -171,7 +171,7 @@ final class AppDelegate: NSObject, NSApplicationDelegate {
         field.frame = originalFrame
         field.textStorage?.setAttributedString(NSAttributedString(string: string))
         field.textColor = .textColor
-        field.alignment = .center
+        field.alignment = .left
         
         if #available(macOS 10.15, *) {
             field.font = NSFont.monospacedSystemFont(ofSize: windowSize.fontSize, weight: .bold)

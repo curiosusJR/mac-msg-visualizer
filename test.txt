@@ -1,0 +1,7 @@
+☐ 000: mito_ncbi and edirect: find the way to download mito data
+☐ 001: 模型描述: build the zero-evolution and add para; vim zhongqi_latex/src/03_model.tex and 00-daily*.md though
+☐ 002: make a model list for revbayes P3
+☐ 003: 输入文件格式，即数据来源
+☐ 004: learning model adding and config in revbayes
+☐ 005: ascp 批量下载基因
+

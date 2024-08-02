@@ -41,4 +41,4 @@ final class KeyCastCommand: Command {
 }
 
 let keyCast = CLI(singleCommand: KeyCastCommand())
-keyCast.go()
+_ = keyCast.go()
